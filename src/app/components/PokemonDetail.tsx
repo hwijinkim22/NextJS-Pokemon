@@ -14,7 +14,7 @@ type Pokemon = {
 
 const PokemonDetail: React.FC<{ pokemonData: Pokemon }> = ({ pokemonData }) => {
   return (
-  <div className="border">
+  <div className="border border-gray-300 ">
     <header className="font-black text-center flex flex-col items-center justify-center">
       {pokemonData.korean_name}
       <p>No. {pokemonData.id}</p>

@@ -52,7 +52,7 @@ const PokemonList: React.FC = () => {
             <div
               key={pokemon.id}
               className="hover:border hover:border-green-300 hover:shadow-lg hover:cursor-pointer
-              border border-gray-100 flex flex-col justify-center items-center text-center shadow-md rounded-lg p-4"
+              border border-gray-100 flex flex-col justify-center items-center text-center shadow-md rounded-lg p-4 bg-green-100"
             >
               <Link href={`/pokemondetail/${pokemon.id}`}>
               <Image
@@ -62,7 +62,7 @@ const PokemonList: React.FC = () => {
                 alt={pokemon.name}
                 className="mb-4 mx-auto hover:drop-shadow-yellow"
               />
-                <p className="font-bold">{pokemon.korean_name}</p>
+                <p className="font-bold text-indigo-700">{pokemon.korean_name}</p>
                 <p>도감번호: {pokemon.id}</p>
                 <p>키: {pokemon.weight}cm</p>
               </Link>
